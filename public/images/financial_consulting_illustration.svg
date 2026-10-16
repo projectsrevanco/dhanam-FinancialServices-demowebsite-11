@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fcBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAF9"/>
+      <stop offset="100%" stop-color="#EAF2ED"/>
+    </linearGradient>
+    <linearGradient id="fcCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FDFEFE"/>
+    </linearGradient>
+    <linearGradient id="chartGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#245C45" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#245C45" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="fcShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#194632" flood-opacity="0.09"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#fcBg)"/>
+
+  <!-- Grid lines -->
+  <g stroke="#DFE5E0" stroke-width="1" opacity="0.35">
+    <line x1="50" y1="0" x2="50" y2="600"/>
+    <line x1="750" y1="0" x2="750" y2="600"/>
+    <line x1="0" y1="530" x2="800" y2="530"/>
+  </g>
+
+  <ellipse cx="400" cy="520" rx="340" ry="22" fill="#245C45" opacity="0.06"/>
+
+  <!-- Main Advisory Performance Console -->
+  <g transform="translate(80, 80)" filter="url(#fcShadow)">
+    <rect x="0" y="0" width="640" height="420" rx="14" fill="url(#fcCard)" stroke="#DFE5E0" stroke-width="1.5"/>
+
+    <!-- Header bar -->
+    <rect x="0" y="0" width="640" height="60" rx="14" fill="#245C45"/>
+    <rect x="0" y="48" width="640" height="12" fill="#245C45"/>
+    
+    <text x="30" y="36" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">FINANCIAL PERFORMANCE &amp; STRATEGIC ADVISORY</text>
+    <rect x="515" y="18" width="95" height="24" rx="12" fill="#E3EFE7"/>
+    <text x="562" y="34" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#245C45" text-anchor="middle">QUARTERLY REVIEW</text>
+
+    <!-- Top KPI cards (3 columns) -->
+    <g transform="translate(30, 80)">
+      <!-- KPI 1: Operating Cash Cycle -->
+      <rect x="0" y="0" width="180" height="74" rx="8" fill="#F8FAF9" stroke="#DFE5E0"/>
+      <text x="14" y="22" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#66736B">Operating Cash Cycle</text>
+      <text x="14" y="48" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#245C45">34 Days</text>
+      <rect x="115" y="32" width="52" height="18" rx="9" fill="#E3EFE7"/>
+      <text x="141" y="44" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700" fill="#245C45" text-anchor="middle">-8 Days</text>
+
+      <!-- KPI 2: Gross Margin Trajectory -->
+      <rect x="200" y="0" width="180" height="74" rx="8" fill="#F8FAF9" stroke="#DFE5E0"/>
+      <text x="214" y="22" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#66736B">Gross Profit Margin</text>
+      <text x="214" y="48" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#245C45">28.4%</text>
+      <rect x="315" y="32" width="52" height="18" rx="9" fill="#E3EFE7"/>
+      <text x="341" y="44" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700" fill="#245C45" text-anchor="middle">+3.2%</text>
+
+      <!-- KPI 3: Working Capital Coverage -->
+      <rect x="400" y="0" width="180" height="74" rx="8" fill="#F8FAF9" stroke="#DFE5E0"/>
+      <text x="414" y="22" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#66736B">Working Capital Ratio</text>
+      <text x="414" y="48" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#245C45">1.82x</text>
+      <rect x="515" y="32" width="52" height="18" rx="9" fill="#E3EFE7"/>
+      <text x="541" y="44" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700" fill="#245C45" text-anchor="middle">Optimal</text>
+    </g>
+
+    <!-- Lower Section: Cash Flow Growth Chart (Left) and Advisory Takeaways (Right) -->
+    <!-- Left Chart Area -->
+    <g transform="translate(30, 172)">
+      <rect x="0" y="0" width="340" height="216" rx="8" fill="#F8FAF9" stroke="#DFE5E0"/>
+      <text x="18" y="26" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#26332D">Cash Flow &amp; Revenue Trajectory</text>
+      <text x="18" y="40" font-family="system-ui, sans-serif" font-size="9" fill="#66736B">Illustrative 6-Month Rolling Commercial Trend</text>
+
+      <!-- Chart grid -->
+      <g stroke="#E3EFE7" stroke-width="1">
+        <line x1="20" y1="70" x2="320" y2="70"/>
+        <line x1="20" y1="110" x2="320" y2="110"/>
+        <line x1="20" y1="150" x2="320" y2="150"/>
+        <line x1="20" y1="185" x2="320" y2="185"/>
+      </g>
+
+      <!-- Area fill under line -->
+      <path d="M 35 160 L 90 145 L 145 130 L 200 115 L 255 90 L 305 75 L 305 185 L 35 185 Z" fill="url(#chartGreen)"/>
+
+      <!-- Upward Trajectory Trend Line -->
+      <path d="M 35 160 L 90 145 L 145 130 L 200 115 L 255 90 L 305 75" fill="none" stroke="#245C45" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Data points -->
+      <circle cx="35" cy="160" r="4.5" fill="#FFFFFF" stroke="#245C45" stroke-width="2.5"/>
+      <circle cx="90" cy="145" r="4.5" fill="#FFFFFF" stroke="#245C45" stroke-width="2.5"/>
+      <circle cx="145" cy="130" r="4.5" fill="#FFFFFF" stroke="#245C45" stroke-width="2.5"/>
+      <circle cx="200" cy="115" r="4.5" fill="#FFFFFF" stroke="#245C45" stroke-width="2.5"/>
+      <circle cx="255" cy="90" r="4.5" fill="#FFFFFF" stroke="#245C45" stroke-width="2.5"/>
+      <circle cx="305" cy="75" r="5" fill="#245C45" stroke="#FFFFFF" stroke-width="2"/>
+
+      <!-- Month Labels -->
+      <text x="35" y="202" font-family="system-ui, sans-serif" font-size="8.5" fill="#66736B" text-anchor="middle">May</text>
+      <text x="90" y="202" font-family="system-ui, sans-serif" font-size="8.5" fill="#66736B" text-anchor="middle">Jun</text>
+      <text x="145" y="202" font-family="system-ui, sans-serif" font-size="8.5" fill="#66736B" text-anchor="middle">Jul</text>
+      <text x="200" y="202" font-family="system-ui, sans-serif" font-size="8.5" fill="#66736B" text-anchor="middle">Aug</text>
+      <text x="255" y="202" font-family="system-ui, sans-serif" font-size="8.5" fill="#66736B" text-anchor="middle">Sep</text>
+      <text x="305" y="202" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700" fill="#245C45" text-anchor="middle">Oct</text>
+    </g>
+
+    <!-- Right Advisory Insights Column -->
+    <g transform="translate(390, 172)">
+      <rect x="0" y="0" width="220" height="216" rx="8" fill="#FFFFFF" stroke="#DFE5E0"/>
+      <text x="16" y="26" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#26332D">Consultant Findings</text>
+      <line x1="16" y1="36" x2="204" y2="36" stroke="#DFE5E0" stroke-width="1"/>
+
+      <!-- Bullet 1 -->
+      <circle cx="24" cy="54" r="3.5" fill="#245C45"/>
+      <text x="36" y="52" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#26332D">Debtor Collections</text>
+      <text x="36" y="66" font-family="system-ui, sans-serif" font-size="8.5" fill="#66736B">Average collection time reduced from 42 to 34 days.</text>
+
+      <!-- Bullet 2 -->
+      <circle cx="24" cy="98" r="3.5" fill="#245C45"/>
+      <text x="36" y="96" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#26332D">Inventory Turnover</text>
+      <text x="36" y="110" font-family="system-ui, sans-serif" font-size="8.5" fill="#66736B">Overhead costs stabilized across production cycles.</text>
+
+      <!-- Bullet 3 -->
+      <circle cx="24" cy="142" r="3.5" fill="#245C45"/>
+      <text x="36" y="140" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#26332D">Working Capital Expansion</text>
+      <text x="36" y="154" font-family="system-ui, sans-serif" font-size="8.5" fill="#66736B">Sufficient operating reserves for scheduled Q4 expansion.</text>
+
+      <!-- Callout footer -->
+      <rect x="14" y="174" width="192" height="30" rx="4" fill="#E3EFE7"/>
+      <text x="110" y="193" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700" fill="#245C45" text-anchor="middle">Objective Commercial Guidance</text>
+    </g>
+  </g>
+</svg>

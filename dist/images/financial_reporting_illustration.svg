@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="frBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAF9"/>
+      <stop offset="100%" stop-color="#EAF3EE"/>
+    </linearGradient>
+    <linearGradient id="frCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FDFEFE"/>
+    </linearGradient>
+    <filter id="frShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#194632" flood-opacity="0.09"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#frBg)"/>
+  
+  <g stroke="#DFE5E0" stroke-width="1" opacity="0.35">
+    <line x1="50" y1="0" x2="50" y2="600"/>
+    <line x1="750" y1="0" x2="750" y2="600"/>
+    <line x1="0" y1="530" x2="800" y2="530"/>
+  </g>
+  <ellipse cx="400" cy="520" rx="340" ry="22" fill="#245C45" opacity="0.06"/>
+
+  <g transform="translate(80, 80)" filter="url(#frShadow)">
+    <rect x="0" y="0" width="640" height="420" rx="14" fill="url(#frCard)" stroke="#DFE5E0" stroke-width="1.5"/>
+
+    <!-- Header bar -->
+    <rect x="0" y="0" width="640" height="60" rx="14" fill="#245C45"/>
+    <rect x="0" y="48" width="640" height="12" fill="#245C45"/>
+    
+    <text x="30" y="36" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">EXECUTIVE MONTHLY MANAGEMENT ACCOUNTS</text>
+    <rect x="525" y="18" width="85" height="24" rx="12" fill="#E3EFE7"/>
+    <text x="567" y="34" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#245C45" text-anchor="middle">OCTOBER 2024</text>
+
+    <!-- Content: Left P&L Breakdown, Right Performance Gauges -->
+    <g transform="translate(30, 80)">
+      <!-- Left: Comparative Statement Breakdown -->
+      <rect x="0" y="0" width="350" height="308" rx="8" fill="#F8FAF9" stroke="#DFE5E0"/>
+      <text x="18" y="24" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#26332D">Comparative Profit &amp; Loss Summary</text>
+      <text x="18" y="38" font-family="system-ui, sans-serif" font-size="9" fill="#66736B">Values in Indian Rupees (INR) • Audit Verified</text>
+
+      <g transform="translate(18, 54)">
+        <!-- Table Header -->
+        <rect x="0" y="0" width="314" height="24" rx="4" fill="#E3EFE7"/>
+        <text x="10" y="16" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#245C45">LINE ITEM</text>
+        <text x="180" y="16" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#245C45">PREV MONTH</text>
+        <text x="260" y="16" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#245C45">CURRENT</text>
+
+        <!-- Row 1 -->
+        <text x="10" y="44" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#26332D">Gross Revenue</text>
+        <text x="180" y="44" font-family="monospace" font-size="9.5" fill="#66736B">₹6,40,000</text>
+        <text x="260" y="44" font-family="monospace" font-size="9.5" font-weight="700" fill="#245C45">₹6,80,000</text>
+        <line x1="0" y1="54" x2="314" y2="54" stroke="#DFE5E0" stroke-width="1"/>
+
+        <!-- Row 2 -->
+        <text x="10" y="74" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#26332D">Cost of Sales (COGS)</text>
+        <text x="180" y="74" font-family="monospace" font-size="9.5" fill="#66736B">₹2,85,000</text>
+        <text x="260" y="74" font-family="monospace" font-size="9.5" font-weight="600" fill="#26332D">₹2,95,000</text>
+        <line x1="0" y1="84" x2="314" y2="84" stroke="#DFE5E0" stroke-width="1"/>
+
+        <!-- Row 3 -->
+        <text x="10" y="104" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#245C45">Gross Profit</text>
+        <text x="180" y="104" font-family="monospace" font-size="9.5" fill="#66736B">₹3,55,000</text>
+        <text x="260" y="104" font-family="monospace" font-size="9.5" font-weight="700" fill="#245C45">₹3,85,000</text>
+        <line x1="0" y1="114" x2="314" y2="114" stroke="#DFE5E0" stroke-width="1"/>
+
+        <!-- Row 4 -->
+        <text x="10" y="134" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#26332D">Operating Overheads</text>
+        <text x="180" y="134" font-family="monospace" font-size="9.5" fill="#66736B">₹1,25,000</text>
+        <text x="260" y="134" font-family="monospace" font-size="9.5" font-weight="600" fill="#26332D">₹1,35,000</text>
+        <line x1="0" y1="144" x2="314" y2="144" stroke="#DFE5E0" stroke-width="1"/>
+
+        <!-- Row 5 (Net Operating Profit) -->
+        <rect x="0" y="154" width="314" height="32" rx="4" fill="#E3EFE7"/>
+        <text x="10" y="174" font-family="system-ui, sans-serif" font-size="10.5" font-weight="800" fill="#245C45">Net Operating Profit</text>
+        <text x="180" y="174" font-family="monospace" font-size="10" fill="#194632">₹2,30,000</text>
+        <text x="260" y="174" font-family="monospace" font-size="10.5" font-weight="800" fill="#245C45">₹2,50,000</text>
+
+        <!-- Plain English Interpretation -->
+        <g transform="translate(0, 198)">
+          <rect x="0" y="0" width="314" height="42" rx="4" fill="#FFFFFF" stroke="#DFE5E0"/>
+          <text x="10" y="16" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#245C45">PLAIN-LANGUAGE EXECUTIVE NOTE:</text>
+          <text x="10" y="30" font-family="system-ui, sans-serif" font-size="8.5" fill="#66736B">Revenue grew by 6.2% with steady margin preservation.</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Right: Aged Receivables & Solvency Indicators -->
+    <g transform="translate(400, 80)">
+      <rect x="0" y="0" width="210" height="308" rx="8" fill="#F8FAF9" stroke="#DFE5E0"/>
+      <text x="16" y="24" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#26332D">Aged Receivables</text>
+      <text x="16" y="38" font-family="system-ui, sans-serif" font-size="9" fill="#66736B">Customer Aging Schedule</text>
+
+      <!-- Receivables Bar chart -->
+      <g transform="translate(16, 56)">
+        <!-- 0-30 days -->
+        <text x="0" y="14" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#26332D">0–30 Days (Current)</text>
+        <rect x="0" y="20" width="178" height="14" rx="3" fill="#E3EFE7"/>
+        <rect x="0" y="20" width="138" height="14" rx="3" fill="#245C45"/>
+        <text x="144" y="31" font-family="monospace" font-size="8.5" font-weight="700" fill="#245C45">78%</text>
+
+        <!-- 31-60 days -->
+        <text x="0" y="54" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#26332D">31–60 Days</text>
+        <rect x="0" y="60" width="178" height="14" rx="3" fill="#E3EFE7"/>
+        <rect x="0" y="60" width="30" height="14" rx="3" fill="#66736B"/>
+        <text x="36" y="71" font-family="monospace" font-size="8.5" font-weight="700" fill="#66736B">17%</text>
+
+        <!-- 60+ days -->
+        <text x="0" y="94" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#26332D">&gt;60 Days</text>
+        <rect x="0" y="100" width="178" height="14" rx="3" fill="#E3EFE7"/>
+        <rect x="0" y="100" width="10" height="14" rx="3" fill="#C43D3D"/>
+        <text x="16" y="111" font-family="monospace" font-size="8.5" font-weight="700" fill="#C43D3D">5%</text>
+
+        <!-- Key Metric Box -->
+        <g transform="translate(0, 134)">
+          <rect x="0" y="0" width="178" height="96" rx="6" fill="#FFFFFF" stroke="#DFE5E0"/>
+          <text x="12" y="20" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#245C45">BALANCE SHEET HEALTH</text>
+          
+          <text x="12" y="40" font-family="system-ui, sans-serif" font-size="8.5" fill="#66736B">Current Ratio:</text>
+          <text x="166" y="40" font-family="monospace" font-size="9" font-weight="700" fill="#245C45" text-anchor="end">2.1x</text>
+
+          <text x="12" y="60" font-family="system-ui, sans-serif" font-size="8.5" fill="#66736B">Debt to Equity:</text>
+          <text x="166" y="60" font-family="monospace" font-size="9" font-weight="700" fill="#245C45" text-anchor="end">0.34x</text>
+
+          <text x="12" y="80" font-family="system-ui, sans-serif" font-size="8.5" fill="#66736B">Bank Reconciled:</text>
+          <text x="166" y="80" font-family="monospace" font-size="9" font-weight="700" fill="#245C45" text-anchor="end">100%</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

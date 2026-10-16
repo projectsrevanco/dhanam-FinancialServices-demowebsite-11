@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAF9"/>
+      <stop offset="100%" stop-color="#EBF3EE"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FBFDFB"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#245C45"/>
+      <stop offset="100%" stop-color="#194632"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#194632" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Accent -->
+  <g stroke="#DFE5E0" stroke-width="1" opacity="0.4">
+    <line x1="40" y1="0" x2="40" y2="600"/>
+    <line x1="120" y1="0" x2="120" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="680" y1="0" x2="680" y2="600"/>
+    <line x1="760" y1="0" x2="760" y2="600"/>
+    <line x1="0" y1="60" x2="800" y2="600"/>
+    <line x1="0" y1="520" x2="800" y2="520"/>
+  </g>
+
+  <!-- Desk Base Shadow -->
+  <ellipse cx="400" cy="510" rx="330" ry="24" fill="#245C45" opacity="0.06"/>
+
+  <!-- Left: Official Corporate Compliance Binder -->
+  <g transform="translate(110, 110)" filter="url(#shadow)">
+    <!-- Binder spine & cover -->
+    <rect x="0" y="0" width="220" height="370" rx="10" fill="#245C45"/>
+    <rect x="25" y="0" width="195" height="370" rx="6" fill="#1E4D3A"/>
+    <rect x="35" y="15" width="175" height="340" rx="4" fill="#FFFFFF"/>
+    
+    <!-- Binder label plate -->
+    <rect x="55" y="40" width="135" height="60" rx="4" fill="#E3EFE7" stroke="#245C45" stroke-width="1.5"/>
+    <text x="122" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#245C45" text-anchor="middle" letter-spacing="1">STATUTORY REGISTER</text>
+    <text x="122" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#66736B" text-anchor="middle">ROC &amp; CORPORATE KYC</text>
+    <text x="122" y="90" font-family="monospace" font-size="7.5" fill="#245C45" text-anchor="middle">FY 2024–25</text>
+
+    <!-- Indexed Tab rows -->
+    <g transform="translate(55, 125)">
+      <rect x="0" y="0" width="135" height="26" rx="4" fill="#F3F5F4"/>
+      <circle cx="14" cy="13" r="5" fill="#245C45"/>
+      <text x="26" y="16" font-family="system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#26332D">DIR-3 KYC Records</text>
+
+      <rect x="0" y="34" width="135" height="26" rx="4" fill="#F3F5F4"/>
+      <circle cx="14" cy="47" r="5" fill="#245C45"/>
+      <text x="26" y="50" font-family="system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#26332D">Form 24Q / 26Q TDS</text>
+
+      <rect x="0" y="68" width="135" height="26" rx="4" fill="#F3F5F4"/>
+      <circle cx="14" cy="81" r="5" fill="#245C45"/>
+      <text x="26" y="84" font-family="system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#26332D">Annual MCA Filings</text>
+
+      <rect x="0" y="102" width="135" height="26" rx="4" fill="#F3F5F4"/>
+      <circle cx="14" cy="115" r="5" fill="#245C45"/>
+      <text x="26" y="118" font-family="system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#26332D">MSME Udyam Filing</text>
+
+      <rect x="0" y="136" width="135" height="26" rx="4" fill="#F3F5F4"/>
+      <circle cx="14" cy="149" r="5" fill="#245C45"/>
+      <text x="26" y="152" font-family="system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#26332D">Board Resolutions</text>
+    </g>
+  </g>
+
+  <!-- Right: Verification Checklist & Statutory Filing Dossier -->
+  <g transform="translate(360, 90)" filter="url(#shadow)">
+    <!-- Document background -->
+    <rect x="0" y="0" width="340" height="420" rx="12" fill="url(#cardGrad)" stroke="#DFE5E0" stroke-width="1.5"/>
+    
+    <!-- Top banner -->
+    <rect x="0" y="0" width="340" height="54" rx="12" fill="#245C45"/>
+    <rect x="0" y="44" width="340" height="10" fill="#245C45"/>
+    <text x="24" y="33" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">COMPLIANCE REVIEW DOSSIER</text>
+    
+    <!-- Status Chip -->
+    <rect x="238" y="16" width="82" height="22" rx="11" fill="#E3EFE7"/>
+    <text x="279" y="31" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#245C45" text-anchor="middle">VERIFIED</text>
+
+    <!-- Checklist Items -->
+    <g transform="translate(24, 76)">
+      <!-- Item 1 -->
+      <rect x="0" y="0" width="292" height="46" rx="6" fill="#F8FAF9" stroke="#DFE5E0"/>
+      <circle cx="22" cy="23" r="10" fill="#245C45"/>
+      <path d="M17 23 L21 27 L27 19" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="42" y="19" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#26332D">Statutory Due-Date Calendar</text>
+      <text x="42" y="33" font-family="system-ui, sans-serif" font-size="9.5" fill="#66736B">Advance alerts scheduled for Q3 cutoffs</text>
+
+      <!-- Item 2 -->
+      <rect x="0" y="56" width="292" height="46" rx="6" fill="#F8FAF9" stroke="#DFE5E0"/>
+      <circle cx="22" cy="79" r="10" fill="#245C45"/>
+      <path d="M17 79 L21 83 L27 75" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="42" y="75" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#26332D">TDS Challan 281 Reconciliation</text>
+      <text x="42" y="89" font-family="system-ui, sans-serif" font-size="9.5" fill="#66736B">Section 194C, 194J &amp; 194I tax reconciled</text>
+
+      <!-- Item 3 -->
+      <rect x="0" y="112" width="292" height="46" rx="6" fill="#F8FAF9" stroke="#DFE5E0"/>
+      <circle cx="22" cy="135" r="10" fill="#245C45"/>
+      <path d="M17 135 L21 139 L27 131" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="42" y="131" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#26332D">Director Identification Verification</text>
+      <text x="42" y="145" font-family="system-ui, sans-serif" font-size="9.5" fill="#66736B">DIR-3 KYC mobile OTP and DSC attested</text>
+
+      <!-- Item 4 -->
+      <rect x="0" y="168" width="292" height="46" rx="6" fill="#F8FAF9" stroke="#DFE5E0"/>
+      <circle cx="22" cy="191" r="10" fill="#245C45"/>
+      <path d="M17 191 L21 195 L27 187" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="42" y="187" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#26332D">MCA Annual Returns Draft</text>
+      <text x="42" y="201" font-family="system-ui, sans-serif" font-size="9.5" fill="#66736B">Form MGT-7A &amp; AOC-4 documentation</text>
+
+      <!-- Seal & Signature Section -->
+      <g transform="translate(0, 230)">
+        <rect x="0" y="0" width="292" height="74" rx="6" fill="#E3EFE7" stroke="#245C45" stroke-width="1"/>
+        <!-- Seal Stamp -->
+        <circle cx="44" cy="37" r="24" fill="none" stroke="#245C45" stroke-width="2" stroke-dasharray="3 2"/>
+        <circle cx="44" cy="37" r="19" fill="#245C45" opacity="0.1"/>
+        <text x="44" y="34" font-family="system-ui, sans-serif" font-size="7" font-weight="800" fill="#245C45" text-anchor="middle">COMPLIANCE</text>
+        <text x="44" y="43" font-family="system-ui, sans-serif" font-size="6" font-weight="700" fill="#245C45" text-anchor="middle">PASSED</text>
+        
+        <text x="82" y="30" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#245C45">Authorized Documentation Review</text>
+        <text x="82" y="46" font-family="system-ui, sans-serif" font-size="9" fill="#26332D">All statutory records indexed and ready for sign-off.</text>
+      </g>
+    </g>
+  </g>
+</svg>
